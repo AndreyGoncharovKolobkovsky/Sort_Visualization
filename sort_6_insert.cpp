@@ -6,7 +6,7 @@ void insertionSort(int list[], int listLength)
 	for(int i = 1; i < listLength; i++)
 	{
 		int j = i - 1;
-		const int N = 500;
+		const int N = 100;
 		while(j >= 0 && list[j] > list[j + 1])
 		{
 			swap(list[j], list[j + 1]);
@@ -20,12 +20,12 @@ void insertionSort(int list[], int listLength)
 
 int main()
 {
-	const int N=500;
+	const int N=100;
     int list[N],i,tmp;
     //randomize();
 
     for(i=0;i<N;i++) {
-        list[i] = rand()%100;
+        list[i] = rand()%500;
         cout<<list[i]<<" ";
     }
     cout<<endl;
