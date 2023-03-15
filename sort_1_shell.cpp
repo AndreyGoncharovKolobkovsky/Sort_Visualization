@@ -12,7 +12,7 @@ void shellSort(int list[], int listLength)
 			{
 				swap(list[j], list[j - step]);
 				j-=step;
-				const int N=500;
+				const int N=100;
 				for(int i=0;i<N;i++)
                     cout << list[i] << " ";
                     cout << endl;
@@ -23,12 +23,12 @@ void shellSort(int list[], int listLength)
 
 int main()
 {
-	const int N=500;
+	const int N=100;
     int list[N],i,tmp;
     //randomize();
 
     for(i=0;i<N;i++) {
-        list[i] = rand()%100;
+        list[i] = rand()%500;
         cout<<list[i]<<" ";
     }
     cout<<endl;
