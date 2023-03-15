@@ -22,7 +22,7 @@ void heapify(int list[], int listLength, int root)
 
 void heapSort(int list[], int listLength)
 {
-    const int N = 500;
+    const int N = 100;
 	for(int i = listLength / 2 - 1; i >= 0; i--)
 		heapify(list, listLength, i);
 
@@ -39,12 +39,12 @@ void heapSort(int list[], int listLength)
 
 int main()
 {
-	const int N=500;
+	const int N=100;
     int list[N],i,tmp;
     //randomize();
 
     for(i=0;i<N;i++) {
-        list[i] = rand()%100;
+        list[i] = rand()%500;
         cout<<list[i]<<" ";
     }
     cout<<endl;
