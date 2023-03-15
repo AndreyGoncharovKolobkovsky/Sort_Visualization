@@ -13,7 +13,7 @@ void bubbleSort(int list[], int listLength)
 			{
 				swap(list[i], list[i + 1]);
 				swapped = true;
-				const int N=500;
+				const int N=100;
 				for(int i=0;i<N;i++)
                     cout << list[i] << " ";
                     cout << endl;
@@ -27,13 +27,12 @@ void bubbleSort(int list[], int listLength)
 
 int main()
 {
-	//int list[5] = {3,19,8,0,48};
-	const int N=500;
+	const int N=100;
     int list[N],i,tmp;
     //randomize();
 
     for(i=0;i<N;i++) {
-        list[i] = rand()%100;
+        list[i] = rand()%500;
         cout<<list[i]<<" ";
     }
     cout<<endl;
