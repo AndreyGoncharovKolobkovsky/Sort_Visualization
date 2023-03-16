@@ -1,11 +1,11 @@
 from PIL import Image, ImageDraw
 
-k = int(input())
 A = 1600
 B = 1600
 Results = []
 for i in range(100):
     Results.append(int(input()))
+k = int(input())
 new_img = Image.new('RGB', (A, B), 'white')
 pencil = ImageDraw.Draw(new_img)
 for j in range(len(Results)):
