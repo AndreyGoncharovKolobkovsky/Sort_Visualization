@@ -51,8 +51,4 @@ int main()
     cout<<endl;
 	bubbleSort(list, N);
 
-	//cout << "Sorted array ..." << endl;
-	//for(int i = 0; i < N; i++)
-		//cout << list[i] << '\t';
-	//cout << endl;
 }
