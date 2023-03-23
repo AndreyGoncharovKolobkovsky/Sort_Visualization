@@ -14,7 +14,7 @@ void shellSort(int list[], int listLength)
 			{
 				swap(list[j], list[j - step]);
 				j-=step;
-				const int N=10;
+				const int N=100;
 				string FileName = to_string(counter)+".txt";
                 ofstream file (FileName);
                 for(int k=0;k<N;k++){
@@ -37,7 +37,7 @@ void shellSort(int list[], int listLength)
 
 int main()
 {
-	const int N=10;
+	const int N=100;
     int list[N],i,tmp;
     //randomize();
 
