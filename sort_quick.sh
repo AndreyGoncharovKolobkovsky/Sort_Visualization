@@ -1,4 +1,4 @@
-/bin/bash
+#!/bin/bash
 
 echo COME ON DUDE, LETS DO THIS
 g++ sort_4_quick.cpp
