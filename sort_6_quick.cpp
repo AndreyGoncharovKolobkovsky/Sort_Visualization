@@ -23,7 +23,6 @@ int partition(int list[], int start, int pivot)
                 file << list[k] << endl;
             }
             file.close();
-            //cout << counter << endl;
 		}
 		else if(list[i] > list[pivot])
 		{
@@ -38,7 +37,6 @@ int partition(int list[], int start, int pivot)
                 file << list[k] << endl;
             }
             file.close();
-            //cout << counter << endl;
         }
 		else i++;
 
@@ -74,6 +72,5 @@ int main()
 	ofstream file (FileName);
     file << counter;
     file.close();
-    //cout << counter << endl;
 	return 0;
 }
