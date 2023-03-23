@@ -6,7 +6,7 @@ for frame_number in range(1, NumFiles):
     frames.append(frame)
 
 frames[0].save(
-    './Sort_visual2.gif',
+    './Sort_visual.gif',
     save_all=True,
     append_images=frames[1:],
     optimize=True,
