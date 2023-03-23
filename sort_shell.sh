@@ -5,10 +5,10 @@ g++ sort_1_shell.cpp -o sort_1_shell
 ./sort_1_shell
 
 
-python3 PNGmaker.py << cat *.txt
+python3 PNGMaker.py << cat *.txt
 
 
-python3 GIFmaker.py
+python3 GifMaker.py
 
 rm *.txt *.png sort_1_shell
 

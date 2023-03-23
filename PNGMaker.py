@@ -5,7 +5,7 @@ B = 1600
 t = open(r"amount.txt")
 for k in range(int(t.readline())):
     Results = []
-    for i in range(100):
+    for i in range(10):
         Results.append(int(input()))
     new_img = Image.new('RGB', (A, B), 'white')
     pencil = ImageDraw.Draw(new_img)

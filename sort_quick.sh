@@ -4,9 +4,9 @@ echo COME ON DUDE, LETS DO THIS
 g++ sort_4_quick.cpp -o sort_4_quick
 ./sort_4_quick
 
-python3 PNGmaker.py << cat *.txt
+python3 PNGMaker.py << cat *.txt
 
-python3 GIFmaker.py
+python3 GifMaker.py
 
 rm *.txt *.png sort_4_quick
 

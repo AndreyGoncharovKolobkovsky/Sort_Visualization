@@ -4,9 +4,9 @@ echo COME ON DUDE, LETS DO THIS
 g++ sort_3_bubbles.cpp -o sort_3_bubbles
 ./sort_3_bubbles
 
-python3 PNGmaker.py << cat *.txt
+python3 PNGMaker.py << cat *.txt
 
-python3 GIFmaker.py
+python3 GifMaker.py
 
 rm *.txt *.png sort_3_bubbles
 
