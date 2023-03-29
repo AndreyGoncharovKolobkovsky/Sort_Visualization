@@ -2,21 +2,20 @@
 #include <fstream>
 using namespace std;
 
-void bubbleSort(int list[], int listLength)
+void insertionSort(int list[], int listLength)
 {
     int counter = 0;
-	while(listLength--)
+	for(int i = 1; i < listLength; i++)
 	{
-		bool swapped = false;
-
-		for(int i = 0; i < listLength; i++)
+		int j = i - 1;
+		const int N = 100;
+		while(j >= 0 && list[j] > list[j + 1])
 		{
-			if(list[i] > list[i + 1])
-			{
-				swap(list[i], list[i + 1]);
-				swapped = true;
-				const int N=100;
-				string FileName = to_string(counter)+".txt";
+			swap(list[j], list[j + 1]);
+			j--;
+			for(int i=0;i<N;i++){
+                    cout << list[i] << endl;
+                    string FileName = to_string(counter)+".txt";
                 ofstream file (FileName);
                 for(int k=0;k<N;k++){
                     cout << list[k] << endl;
@@ -26,16 +25,13 @@ void bubbleSort(int list[], int listLength)
                 counter ++;
 			}
 		}
-
-		if(swapped == false)
-			break;
 	}
 	string FileName = "amount.txt";
-        ofstream file (FileName);
-        {
-        file << counter;
-        file.close();
-        }
+                    std::ofstream file (FileName);
+                        {
+                        file << counter;
+                        file.close();
+                        }
 }
 
 int main()
@@ -49,6 +45,8 @@ int main()
         cout<<list[i]<<" ";
     }
     cout<<endl;
-	bubbleSort(list, N);
 
+	insertionSort(list, N);
+
+	return 0;
 }

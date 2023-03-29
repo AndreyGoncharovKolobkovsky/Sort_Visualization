@@ -5,7 +5,6 @@
 
 using namespace std;
 
-//главный функция(метод) программы в котором реализован метод гномьей сортировки
 int main() {
     const int N=100;
     int counter = 0;
@@ -17,7 +16,6 @@ int main() {
         cout<<A[i]<<" ";
     }
     cout<<endl;
-    //алгоритм гномьей сортировки
     i = 0;
     while (i < N) {
         if (i == 0 || A[i - 1] <= A[i])
@@ -37,10 +35,7 @@ int main() {
                 counter ++;
         }
     }
-        // конец иттерации
-        // cout << '#';
-       // cout.width(2);
-       // cout << i <<"# ";
+      
     string FileName = "amount.txt";
     ofstream file (FileName);
     file << counter;

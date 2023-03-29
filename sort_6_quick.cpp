@@ -1,5 +1,8 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
+
+int counter = 0;
 
 int partition(int list[], int start, int pivot)
 {
@@ -11,22 +14,36 @@ int partition(int list[], int start, int pivot)
 		{
 			swap(list[i], list[pivot]);
 			pivot--;
+            cout << list[i] << endl;
+            string FileName = to_string(counter)+".txt";
+            ofstream file (FileName);
+            counter ++;
+            for(int k=0;k<N;k++){
+            cout << list[k] << endl;
+                file << list[k] << endl;
+            }
+            file.close();
 		}
-
 		else if(list[i] > list[pivot])
 		{
 			swap(list[pivot - 1], list[pivot]);
 			swap(list[i], list[pivot]);
 			pivot--;
-		}
+            string FileName = to_string(counter)+".txt";
+            ofstream file (FileName);
+            counter ++;
+            for(int k=0;k<N;k++){
+            cout << list[k] << endl;
+                file << list[k] << endl;
+            }
+            file.close();
+        }
 		else i++;
-		for(int i=0;i<N;i++)
-                    cout << list[i] << " ";
-                    cout << endl;
+
 	}
+
 	return pivot;
 }
-
 void quickSort(int list[], int start, int end)
 {
 	if(start < end)
@@ -45,23 +62,15 @@ int main()
     //randomize();
 
     for(i=0;i<N;i++) {
-        list[i] = rand()%500;
+        list[i] = rand()%100;
         cout<<list[i]<<" ";
     }
     cout<<endl;
-	//cout<<"Input array ...\n";
-	//for (int i = 0; i < N; i++)
-	//{
-	  // cout<<list[i]<<"\t";
-	//}
-
 	quickSort(list, 0, (N-1));
 
-	//cout<<"\n\nSorted array ... \n";
-	//for (int i = 0; i < N; i++)
-	//{
-	  // cout<<list[i]<<"\t";
-	//}
-
+	string FileName = "amount.txt";
+	ofstream file (FileName);
+    file << counter;
+    file.close();
 	return 0;
 }
