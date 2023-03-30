@@ -15,7 +15,7 @@ python3 GifMaker.py < amount.txt
 
 rm *.txt *.png sort_1_shell
 
-mv sort_visual.gif gif_quick.gif
+mv Sort_visual.gif gif_quick.gif
 
 echo YES WE CAN
 #echo imdone
