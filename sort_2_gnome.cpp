@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#include<conio.h>
+//#include<conio.h>
 #include<iostream>
 #include <fstream>
 
@@ -13,7 +13,6 @@ int main() {
 
     for(i=0;i<N;i++) {
         A[i] = rand()%100;
-        cout<<A[i]<<" ";
     }
     cout<<endl;
     i = 0;
@@ -28,7 +27,7 @@ int main() {
             string FileName = to_string(counter)+".txt";
                 ofstream file (FileName);
                 for(int k=0;k<N;k++){
-                    cout << A[k] << endl;
+      
                     file << A[k] << endl;
                 }
                 file.close();
@@ -40,7 +39,7 @@ int main() {
     ofstream file (FileName);
     file << counter;
     file.close();
-    getch();
+    //getch();
     return 0;
 }
 

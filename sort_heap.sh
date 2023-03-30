@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo COME ON DUDE, LETS DO THIS
-g++ sort_5_heap.cpp -o sort_5_heap
-./sort_5_heap
+g++ sort_4_heap.cpp -o sort_4_heap
+./sort_4_heap
 
 d=$(<amount.txt)
 for (( i=0; i<d; i++ )); do
@@ -13,9 +13,9 @@ done
 
 python3 GifMaker.py < amount.txt
 
-rm *.txt *.png sort_5_heap
+rm *.txt *.png sort_4_heap
 
-imv Sort_visual.gif gif_heap.gif
+mv Sort_visual.gif gif_heap.gif
 
 echo YES WE CAN
 #echo imdone

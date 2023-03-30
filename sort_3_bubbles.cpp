@@ -19,7 +19,7 @@ void bubbleSort(int list[], int listLength)
 				string FileName = to_string(counter)+".txt";
                 ofstream file (FileName);
                 for(int k=0;k<N;k++){
-                    cout << list[k] << endl;
+                 
                     file << list[k] << endl;
                 }
                 file.close();
@@ -46,7 +46,7 @@ int main()
 
     for(i=0;i<N;i++) {
         list[i] = rand()%100;
-        cout<<list[i]<<" ";
+       
     }
     cout<<endl;
 	bubbleSort(list, N);

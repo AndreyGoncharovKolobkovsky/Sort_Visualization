@@ -33,12 +33,12 @@ void heapSort(int list[], int listLength)
 		swap(list[0], list[i]);
 		heapify(list, i, 0);
 		for(int i=0;i<N;i++)
-                    cout << list[i] << endl;
+               
         const int N=10;
 				string FileName = to_string(counter)+".txt";
                 ofstream file (FileName);
                 for(int k=0;k<N;k++){
-                    cout << list[k] << endl;
+                    
                     file << list[k] << endl;
                 }
                 file.close();
@@ -60,9 +60,9 @@ int main()
 
     for(i=0;i<N;i++) {
         list[i] = rand()%100;
-        cout<<list[i]<<" ";
+        
     }
-    cout<<endl;
+  
 	heapSort(list, N);
 
 }

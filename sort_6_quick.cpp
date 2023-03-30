@@ -14,12 +14,12 @@ int partition(int list[], int start, int pivot)
 		{
 			swap(list[i], list[pivot]);
 			pivot--;
-            cout << list[i] << endl;
+            
             string FileName = to_string(counter)+".txt";
             ofstream file (FileName);
             counter ++;
             for(int k=0;k<N;k++){
-            cout << list[k] << endl;
+            
                 file << list[k] << endl;
             }
             file.close();
@@ -33,7 +33,7 @@ int partition(int list[], int start, int pivot)
             ofstream file (FileName);
             counter ++;
             for(int k=0;k<N;k++){
-            cout << list[k] << endl;
+            
                 file << list[k] << endl;
             }
             file.close();
@@ -63,7 +63,7 @@ int main()
 
     for(i=0;i<N;i++) {
         list[i] = rand()%100;
-        cout<<list[i]<<" ";
+        
     }
     cout<<endl;
 	quickSort(list, 0, (N-1));
